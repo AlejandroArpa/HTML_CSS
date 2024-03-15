@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form 
+        method="get"
+        autocomplete="on"
+    >
+        <!-- con post paso datos ocultos -->
+        <!-- Pasa parametros por url el metodo get -->
+        <input type="text" name="nombre" id="nombre">
+        <input type="submit" value="Enviar">
+        <input type="number" name="my_number" id="" min="0" max="10">
+        <input type="range" value="50" >
+        <input type="date">
+        <label for="Tiempo">Tiemoi</label>
+        <input type="time" name ="time" id="Tiempo">
+        <!-- Los input deben tener la etiqueta name para poder ser enviados -->
+        <select name="option-select" id="" required multiple>
+            <option value="" selected disabled>--Select one option---</option>
+            <option value="option-1">option1</option>
+            <option value="option-2">option2</option>
+            <option value="option-3">option3</option>
+            <option value="option-4">option4</option>
+        </select>
+
+    </form>
+</body>
+</html>
