@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration</title>
+</head>
+<body>
+    <form
+    method="get"
+    autocomplete="on"
+    enctype="multipart/form-data"
+    >
+        <label for="input-name">Nombre</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito" >
+
+        <label for="input-lastname">Apellido</label>
+        <input type="text" required maxlength="50" name="lastname" id="input-lastname" placeholder="Perez" >
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required >
+
+        <label for="input-psw">Contraseña</label>
+        <input name="psw" id="input-psw" type="password" required minlength="8" >
+
+        <label for="input-confirm-psw">Confirme Contraseña</label>
+        <input name="confirm-psw" id="input-confirm-psw" type="password" required minlength="8" >
+
+        <label for="input-photo">Foto de perfil</label>
+        <input id="input-photo" type="file" value="Foto de perfil" name="photo" >
+
+        <label for="input-birthday">Fecha de nacimiento</label>
+        <input id="input-birthday" name="birthday" type="date" required >
+
+        <div>
+            <label>Genero:</label>
+            
+            <label for="Female">Femenino</label>
+            <input name="gender" value="Female" type="radio" required id="Female" >
+            
+            <label for="Male">Masculino</label>
+            <input name="gender" value="Male" type="radio" required id="Male" >
+        </div>
+
+        <label for="input-select-country">Seleccione un pais</label>
+        <select name="country" required id="input-select-country" >
+            <option selected disabled>--Selecciona una opcion--</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Other">Otro</option>
+        </select>
+
+        <label for="input-city">Ingrese su ciudad</label>
+        <input type="text" required maxlength="50" id="input-city" name="city" placeholder="your city here..." >
+
+        <label for="postal-code">Codigo postal</label>
+        <input type="number" required maxlength="7" id="postal-code" name="postal-code" >
+
+        <label for="biography">Biografia</label>
+        <textarea placeholder="Tu biografia aqui..." required maxlength="500" name="biography" ></textarea>
+        
+        <label for="accept">Acepta terminos y condiciones</label>
+        <input type="checkbox" required id="accept" name="accept" >
+        
+        <input type="submit" value="Enviar" >
+        <input type="reset" value="Borrar">
+
+    </form>
+</body>
+</html>

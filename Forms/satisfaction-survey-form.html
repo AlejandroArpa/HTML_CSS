@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfaction survey</title>
+</head>
+<body>
+    
+    <form 
+        method="get"
+        autocomplete="on"
+    >
+        <label for="input-name">Nombre</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito Perez" >
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required >
+
+        <label for="input-age">Edad</label>
+        <input type="number" required name="age" min="18" max="99" >
+        
+        <div>
+            <label>Genero:</label>
+            <label for="Female">Femenino</label>
+            <input name="gender" value="Female" type="radio" required id="Female" >
+            <label for="Male">Masculino</label>
+            <input name="gender" value="Male" type="radio" required id="Male" >
+        </div>
+
+        <label for="input-date">Fecha de uso</label>
+        <input type="date" required name="use-date" id="input-date" >
+
+        <label for="input-calification">Como calificaria nuestro servicio</label>
+        <input type="range" required min="1" max="5" name="calification" id="input-calification" >
+        
+        <label for="input-recommend">Recomendaria nuestro servicio?</label>
+        <input type="checkbox" name="recommend" id="input-recommend" >
+
+        <label for="input-query">Que le gustaria que mejoraramos?</label>
+        <textarea required maxlength="500" name="Query" id="input-query" placeholder="Escribe aqui" ></textarea>
+
+        <label for="input-liked">Que le gustó de nuestro servicio?</label>
+        <textarea required maxlength="500" name="Like" id="input-liked" placeholder="Escribe aqui" ></textarea>
+
+        <input type="submit" value="Enviar" >
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

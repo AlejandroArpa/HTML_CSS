@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product search</title>
+</head>
+<body>
+    
+    <form>
+
+        <label for="product-name">Nombre del producto</label>
+        <input id="product-name" name="product-name" type="text" maxlength="50" required >
+        
+            <label >Categoria</label>
+            
+            <label for="Tecnology">Tecnologia</label>
+            <input type="radio" value="Tecnology" id="Tecnology" name="categorie" required >
+            
+            <label for="home">Hogar</label>
+            <input type="radio" value="home" id="home" name="categorie" required >
+            
+            <label for="other">Otros</label>
+            <input type="radio" value="other" id="other" name="categorie" required >    
+            
+            <label for="min-price">Precio minimo</label>
+            <input type="number" min="0" max="9999" name="min-price" id="min-price" >
+
+            <label for="max-price">Precio maximo</label>
+            <input type="number" min="0" max="9999" name="max-price" id="max-price" >
+
+            <label for="date-publish">Fecha de publicacion</label>
+            <input type="date" id="date-publish" name="date-publish" >
+
+            <label for="expire-date">Fecha de vencimiento</label>
+            <input type="date" id="expire-date" name="expire-date">
+
+            <label for="notification">Desea recibir notificaciones?</label>
+            <input type="checkbox" name="notification" id="notification">
+
+            <label for="num-results">Numero de resultados por pagina</label>
+            <select id="num-results" name="num-results">
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>   
+
+            <input type="submit" value="Buscar">
+            <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>
