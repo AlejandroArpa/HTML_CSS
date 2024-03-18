@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de Display Grid</title>
+<style>
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Define una cuadrícula de 3 columnas de igual tamaño */
+    gap: 10px; /* Espacio entre las celdas de la cuadrícula */
+    padding: 20px; /* Espacio alrededor del contenido de la sección */
+  }
+
+  .grid-item {
+    background-color: #f0f0f0; /* Color de fondo para los elementos de la cuadrícula */
+    text-align: center; /* Centra el texto dentro de los elementos de la cuadrícula */
+    padding: 20px; /* Espacio alrededor del contenido de los elementos de la cuadrícula */
+    border: 1px solid #ddd; /* Borde alrededor de los elementos de la cuadrícula */
+  }
+</style>
+</head>
+<body>
+
+<section>
+  <div class="grid-item">Elemento 1</div>
+  <div class="grid-item">Elemento 5</div>
+  <div class="grid-item">Elemento 2</div>
+  <div class="grid-item">Elemento 3</div>
+  <div class="grid-item">Elemento 4</div>
+  <div class="grid-item">Elemento 6</div>
+</section>
+
+</body>
+</html>
