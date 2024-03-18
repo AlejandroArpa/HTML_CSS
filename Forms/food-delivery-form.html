@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery form</title>
+</head>
+<body>
+    
+    <form action="get">
+        
+        <label for="input-name">Nombre cliente</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito Perez">
+
+        <label for="input-phone">Telefono del cliente</label>
+        <input name="phone" id="input-phone" type="tel" required pattern="[0-9]{10}" placeholder="0123456789">
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required>
+
+        <label for="adress">Direccion de entrega</label>
+        <input type="text" name="adress" id="adress" required placeholder="cl-01 #22-33">
+
+        <label for="delivery-time">Hora de entrega</label>
+        <input type="time" name="delivery-time" id="delivery-time" required>
+
+        <label>Tipo de comida</label>
+        <select name="type-food" id="type-food">
+            <option selected disabled>--Seleccione un tipo de comida--</option>
+            <option value="food1">food1</option>
+            <option value="food2">food2</option>
+            <option value="food3">food3</option>
+            <option value="food4">food4</option>
+            <option value="food5">food5</option>
+        </select>
+
+        <label for="chilly">Nivel de picante</label>
+        <input type="range" name="chilly" id="chilly" min="0" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output>
+
+        <label for="instructives">Instrucciones adicionales</label>
+        <textarea name="instructives" id="instructives" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
+    
+        <label for="cupon">cupon de desctuento</label>
+        <input type="text" name="cupon" id="cupon" maxlength="10">
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

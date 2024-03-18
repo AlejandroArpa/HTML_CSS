@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports registration</title>
+</head>
+<body>
+    
+    <form action="">
+
+        <label for="input-name">Nombre deportista</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito">
+
+        <label for="input-lastname">Apellido deportista</label>
+        <input type="text" required maxlength="50" name="lastname" id="input-lastname" placeholder="Perez" >
+    
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required >
+
+        <label for="input-birthday">Fecha de nacimiento</label>
+        <input id="input-birthday" name="birthday" type="date" required >
+
+        <div>
+            <label>Genero:</label>
+            
+            <label for="Female">Femenino</label>
+            <input name="gender" value="Female" type="radio" required id="Female" >
+            
+            <label for="Male">Masculino</label>
+            <input name="gender" value="Male" type="radio" required id="Male" >
+        </div>
+
+        <label for="input-select-country">Seleccione un pais</label>
+        <select name="country" required id="input-select-country" >
+            <option selected disabled>--Selecciona una opcion--</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Other">Otro</option>
+        </select>
+
+        <label for="input-select-city">Seleccione una ciudad</label>
+        <select name="city" required id="input-select-city" >
+            <option selected disabled>--Selecciona una opcion--</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Other">Otro</option>
+        </select>
+
+        <label for="postal-code">Codigo postal</label>
+        <input type="number" required maxlength="7" id="postal-code" name="postal-code" >
+
+        <label for="sport">Deporte que practica</label>
+        <input type="text" name="sport" id="sport" required minlength="4" maxlength="50" placeholder="Deporte...">
+
+        <label for="experience">Nivel de experiencia</label>
+        <input type="range" name="experience" id="experience" min="0" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output> 
+        
+        <label for="notification">Desea recibir notificaciones?</label>
+        <input type="checkbox" name="notification" id="notification">
+
+        <label for="promo">Desea recibir promociones?</label>
+        <input type="checkbox" name="promo" id="promo">
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

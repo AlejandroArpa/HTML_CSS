@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music preferences</title>
+</head>
+<body>
+
+    <form action="">
+
+        <label for="input-name">Nombre</label>
+        <input autofocus name="name" id="input-name" type="text" required maxlength="50" placeholder="Pepito Perez" >
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required >
+
+        <label for="input-age">Edad</label>
+        <input type="number" required name="age" min="12" max="99" >
+
+        <div>
+            <label>Genero:</label>
+            <label for="Female">Femenino</label>
+            <input name="gender" value="Female" type="radio" required id="Female" >
+            <label for="Male">Masculino</label>
+            <input name="gender" value="Male" type="radio" required id="Male" >
+        </div>
+
+        <label for="music-kind">Genero musical preferido</label>
+        <select name="music-kind" id="music-kind" required>
+            <option selected disabled>--Selecciona un genero musical---</option>
+            <option value="kind1">genero1</option>
+            <option value="kind2">genero2</option>
+            <option value="kind3">genero3</option>
+            <option value="kind4">genero4</option>
+        </select>
+
+        <label for="music-singer">Artista preferido</label>
+        <select name="music-singer" id="music-singer" required>
+            <option selected disabled>--Selecciona un artista---</option>
+            <option value="singer1">artista1</option>
+            <option value="singer2">artista2</option>
+            <option value="singer3">artista3</option>
+            <option value="singer4">artista4</option>
+        </select>
+
+        <label for="music-song">Cancion preferida</label>
+        <select name="music-song" id="music-song" required>
+            <option selected disabled>--Selecciona un cancion---</option>
+            <option value="song1">cancion1</option>
+            <option value="song2">cancion2</option>
+            <option value="song3">cancion3</option>
+            <option value="song4">cancion4</option>
+        </select>
+
+        <label for="music-musical-instrument">Instrumento preferido</label>
+        <select name="music-musical-instrument" id="music-musical-instrument" required> 
+            <option selected disabled>--Selecciona un instrumento---</option>
+            <option value="musical-instrument1">instrumento1</option>
+            <option value="musical-instrument2">instrumento2</option>
+            <option value="musical-instrument3">instrumento3</option>
+            <option value="musical-instrument4">instrumento4</option>
+        </select>
+
+        <label for="notification">Desea recibir notificaciones?</label>
+        <input type="checkbox" name="notification" id="notification">
+
+        <label for="promo">Desea recibir promociones?</label>
+        <input type="checkbox" name="promo" id="promo">
+
+        <input type="submit" value="Suscribirse">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

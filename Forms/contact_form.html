@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="form-section">
+            <h3><i>Contact form</i></h3>
+            <form 
+            enctype="multipart/form-data"
+            autocomplete="on"
+            onsubmit="return false"
+
+            >
+                <label for="input-name">Nombre</label>
+                <input autofocus name="name" id="input-name" type="text" required maxlength="50" placeholder="Pepito Perez" >
+
+                <label for="input-phone">Phone</label>
+                <input name="phone" id="input-phone" type="tel" required pattern="[0-9]{10}" placeholder="0123456789">
+
+                <label for="input-mail">Correo</label>
+                <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required >
+                
+                <label for="input-subject">Asunto</label>
+                <select name="subject" required >
+                    <option selected disabled>--Selecciona una opcion--</option>
+                    <option value="Hablar">Hablar</option>
+                    <option value="Conocer_mas">Conocer mas</option>
+                </select>
+                
+                <label for="textarea-msj">Mensaje</label>
+                <textarea required id="textarea-msj" maxlength="500" placeholder="Escriba un mensaje...">
+                </textarea>
+
+                <label for="input-aggree">Acepta terminos y condiciones?</label>
+                <input 
+                name="aggree"
+                type="checkbox"
+                required
+                id="input-aggree"
+                >
+
+                <label for="input-addcv">Adjunta tu cv</label>
+                <input type="file">
+                
+                <label for="input-availabledate">Fecha de disponibilidad</label>
+                <input type="date" required id="input-availabledate" >
+                
+                <button type="submit">Enviar</button>
+                <input type="reset" value="Borrar">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

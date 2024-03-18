@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter subscription</title>
+</head>
+<body>
+    <form action="get">
+        
+        <label for="input-name">Nombre cliente</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito Perez">
+
+        <div>
+            <label>Genero:</label>
+            <label for="Female">Femenino</label>
+            <input name="gender" value="Female" type="radio" required id="Female" >
+            <label for="Male">Masculino</label>
+            <input name="gender" value="Male" type="radio" required id="Male" >
+        </div>
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required>
+
+        <label for="interest"></label>
+        <select name="interest" id="interest">
+            <option selected disabled>--Seleccione una opcion--</option>
+            <option value="hobbie1">hobbie1</option>
+            <option value="hobbie2">hobbie2</option>
+            <option value="hobbie3">hobbie3</option>
+            <option value="others">otros</option>
+        </select>
+
+        <label for="birthday">Fecha de nacimiento</label>
+        <input type="date" name="birthday" id="birthday">
+
+        <label for="notification">Desea recibir notificaciones?</label>
+        <input type="checkbox" name="notification" id="notification">
+
+        <label for="promo">Desea recibir promociones?</label>
+        <input type="checkbox" name="promo" id="promo">
+
+        <input type="submit" value="Suscribirse">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

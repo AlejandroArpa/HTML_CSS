@@ -18,6 +18,29 @@
         </nav>
     </header>
     <main>
+        <form action="">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required maxlength="50" placeholder="Pepito Perez">
+
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email" required placeholder="email@my-email.com">
+
+            <label for="subject">Asunto</label>
+            <select name="subject" id="subject" required>
+                <option selected disabled>--Seleccione un asunto--</option>
+                <option value="subject1">subject1</option>
+                <option value="subject2">subject2</option>
+                <option value="subject3">subject3</option>
+                <option value="subject4">subject4</option>
+                <option value="subject5">subject5</option>
+            </select>
+
+            <label for="msj">Mensaje</label>
+            <textarea name="msj" id="msj" cols="30" rows="10" required maxlength="500" placeholder="Escriba aqui..."></textarea>
+
+            <label for="accept">Aceptar terminos y condiciones</label>
+            <input type="checkbox" name="accept" id="accept" required>
+        </form>
         <address>
             Alejandro Ramírez<br>
             Calle y número<br>
@@ -28,7 +51,7 @@
         </address>
     </main>
     <footer>
-
+        <p>Designed by <strong><span>Alejandro Ramírez</span></strong></p>
     </footer>
 </body>
 </html>

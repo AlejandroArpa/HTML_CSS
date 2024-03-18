@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product feedback</title>
+</head>
+<body>
+    
+    <form action="get">
+        <label for="input-name">Nombre cliente</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito Perez">
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required>
+
+        <label for="purchase-date">Fecha de compra</label>
+        <input type="date" name="purchase-date" id="purchase-date" required>
+
+        <label for="calification">Calificacion del producto</label>
+        <input type="range" name="calification" id="calification" min="0" max="5">
+
+        <label for="recommend">Recomendaria este producto?</label>
+        <input type="checkbox" name="recommend" id="recommend">
+
+        <label for="liked">Que le gustó del producto?</label>
+        <textarea name="liked" id="liked" cols="30" rows="10" placeholder="Escriba aquí..."></textarea>
+
+        <label for="query">Que le gustaria que mejoraramos?</label>
+        <textarea name="query" id="query" cols="30" rows="10" placeholder="Escriba aquí..."></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan request form</title>
+</head>
+<body>
+    
+    <form action="">
+
+        <label for="input-name">Nombre solicitante</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito">
+
+        <label for="input-lastname">Apellido solicitante</label>
+        <input type="text" required maxlength="50" name="lastname" id="input-lastname" placeholder="Perez" >
+    
+        <label for="input-mail">Correo solicitante</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required >
+
+        <label for="tel">Telefono del solicitante</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required placeholder="0123456789">
+
+        <label for="amount">monto solicitado</label>
+        <input type="number" name="amount" id="amount" required min="100000" max="9999999" value="100000" step="10000">
+
+        <label for="plazo">Plazo de pago</label>
+        <input type="number" name="plazo" id="plazo" required min="12" max="72" step="6" value="12">
+
+        <label for="incoming">Ingresos mensuales</label>
+        <input type="number" name="incoming" id="incoming" required min="1000000">
+
+        <label for="expenses">Gastos mensuales</label>
+        <input type="number" name="expenses" id="expenses" required>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

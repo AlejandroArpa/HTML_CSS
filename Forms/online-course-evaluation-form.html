@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online course evalatuion</title>
+</head>
+<body>
+    
+    <form action="">
+
+        <label for="input-name">Nombre estudiante</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito Perez">
+
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required>
+
+        <label for="start-date">fecha de inicio del curso</label>
+        <input type="date" name="start-date" id="start-date" required>
+
+        <label for="end-date">fecha finalizacion del curso</label>
+        <input type="date" name="end-date" id="end-date" required>
+
+        <label for="calification">Calificacion del curso</label>
+        <input type="range" name="calification" id="calification" min="1" max="5" value="3" oninput="this.nextElementSibling.value = this.value">
+        <output>3</output>
+
+        <label for="recommend">Recomendaria el curso?</label>
+        <input type="checkbox" name="recommend" id="recommend">
+
+        <label for="liked">Que le gustó del curso?</label>
+        <textarea name="liked" id="liked" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
+
+        <label for="query">Que le gustaria que mejoraramos?</label>
+        <textarea name="query" id="query" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
+
+        <label for="query1">Sugerencias futuros cursos</label>
+        <textarea name="query1" id="query1" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

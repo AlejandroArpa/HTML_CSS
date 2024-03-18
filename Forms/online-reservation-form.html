@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online reservation</title>
+</head>
+<body>
+    
+    <form action="get">
+        <label for="input-name">Nombre cliente</label>
+        <input type="text" required maxlength="50" name="name" id="input-name" placeholder="Pepito">
+
+        <label for="tel">Telefono del cliente</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required placeholder="0123456789">
+
+        <label for="input-mail">Correo</label>
+        <input type="email" name="mail" id="input-mail" placeholder="mail@my-mail.com" required>
+
+        <label for="reservation-date">Fecha de reserva</label>
+        <input type="date" name="reservation-date" id="reservation-date" required>
+
+        <label for="reservation-time">Hora de reserva</label>
+        <input type="time" name="reservation-time" id="reservation-time" required>
+
+        <label for="people_num">Numero de personas</label>
+        <input type="number" min="0" max="10" name="people_num" id="people_num">
+
+        <label for="dietethic-requirements">Requerimientos dieteticos</label>
+        <textarea id="dietethic-requirements" name="dietethic-requirements" maxlength="500" placeholder="Escriba sus Requerimientos aqui..."></textarea>
+
+        <label for="notification">Desea recibir notificaciones?</label>
+        <input type="checkbox" name="notification" id="notification">
+
+        <label for="promo">Desea recibir promociones?</label>
+        <input type="checkbox" name="promo" id="promo">
+
+        <input type="submit" value="Reservar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

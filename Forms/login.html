@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
     <header>
@@ -18,54 +18,25 @@
             onsubmit="return false"
             >
                 <label for="input-user">Usuario</label>
-                <input 
-                autofocus
-                name="user"
-                id="input-user"
-                type="text" 
-                required
-                minlength="4"
-                tabindex="1"
-                >
+                <input autofocus name="user" id="input-user" type="text" required minlength="4" >
 
                 <label for="input-psw">Password</label>
-                <input 
-                name="psw"
-                id="input-psw"
-                type="password" 
-                required
-                minlength="7">
+                <input name="psw" id="input-psw" type="password" required minlength="7">
 
                 <label for="input-rememberme">Recuerdame</label>
-                <input 
-                type="checkbox" 
-                name="rememberme" 
-                id="input-rememberme">
+                <input type="checkbox" name="rememberme" id="input-rememberme">
                 
                 <label for="input-accesscode">Codigo de acceso</label>
-                <input 
-                name="accesscode"
-                type="number"
-                required
-                min="1000"
-                max="9999"
-                tabindex="2"
-                >
+                <input name="accesscode" type="number" required min="1000" max="9999" >
                 
                 <label for="input-lastdate">Fecha ultima de visita</label>
-                <input 
-                name="last-date"
-                type="date"
-                required
-                >
+                <input name="last-date" type="date" required >
 
                 <label for="input-time">Hora de acceso</label>
-                <input 
-                name="time"
-                type="time"
-                required
-                >
+                <input name="time" type="time" required >
+                
                 <button type="submit">Aceptar</button>
+                <input type="reset" value="Borrar">
             </form>
         </section>
     </main>
